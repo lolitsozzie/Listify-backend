@@ -21,6 +21,12 @@ Ensure that you are running these commands from within a virtualenv.
     ```
 
 2. Configure project environment variables (`.env` files supported) 
+   ```
+    ALLOWED_HOSTS=localhost,127.0.0.1
+    SECRET_KEY=;Ce&jz'hJuAb
+    DATABASE_URL=sqlite:///test.db
+    CORS_ORIGINS=http://localhost:8080
+   ```
 
 3. Install dependencies with Pipenv
 
@@ -34,7 +40,12 @@ Ensure that you are running these commands from within a virtualenv.
    python manage.py migrate
     ```
 
-5. Start the server
+5. Run collectstatic command
+   ```shell
+   python manage.py collectstatic
+   ```
+
+6. Start the server
 
     ```shell
    python manage.py runserver 
