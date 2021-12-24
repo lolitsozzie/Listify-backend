@@ -14,6 +14,9 @@ __pycache__/
 # Database files
 test.db
 
+# Static files
+staticfiles
+
 # Distribution / packaging
 .Python
 build/
